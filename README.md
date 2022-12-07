@@ -8,6 +8,14 @@
 
 A simple program to take in a CSV file and output a simple html file with a title, header, and a table containing all entries from the csv file that represent new housing built within the time frame covered by the csv file.
 
+## Included Files
+
+ * CreateHTML.awk - main program
+ * BldgPrmtsPublic10-01-2017To10-15-2017.csv - machine readable input file for testing purposes
+ * BldgPrmtsPublic10-01-2017To10-15-2017.xlsx - same testing input but in a human readable format
+ * index.html - an example of a CreateHTML output file
+ * README - this file
+
 ## Design
 
 This program is largely built around two BEGIN statements and a single END statement. It is designed in this manner as the first BEGIN statement creates the opening code for the html document, while the second handles the repetitive line-by-line search of the CSV file. Lastly, the END statement adds the last bit of code to complete the html file and ends the execution of the program.
